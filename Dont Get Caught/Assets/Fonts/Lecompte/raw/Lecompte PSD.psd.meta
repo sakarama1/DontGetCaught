@@ -1,0 +1,1708 @@
+fileFormatVersion: 2
+guid: 50e6e2bc5c2e2144faa790a70120f3c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8639538942268334699
+    second: Lecompte PSD_0
+  - first:
+      213: 4196226345682072539
+    second: Lecompte PSD_1
+  - first:
+      213: 4327329211235996739
+    second: Lecompte PSD_2
+  - first:
+      213: -2361355939986468854
+    second: Lecompte PSD_3
+  - first:
+      213: 282816374557933046
+    second: Lecompte PSD_4
+  - first:
+      213: -6284295399792847171
+    second: Lecompte PSD_5
+  - first:
+      213: -7379527970404422403
+    second: Lecompte PSD_6
+  - first:
+      213: 928734307500016917
+    second: Lecompte PSD_7
+  - first:
+      213: 2948848055252035390
+    second: Lecompte PSD_8
+  - first:
+      213: -8234091000334214670
+    second: Lecompte PSD_9
+  - first:
+      213: -6869585367535088745
+    second: Lecompte PSD_10
+  - first:
+      213: 927920706086849687
+    second: Lecompte PSD_11
+  - first:
+      213: 3943572271750032363
+    second: Lecompte PSD_12
+  - first:
+      213: -518307479390555192
+    second: Lecompte PSD_13
+  - first:
+      213: -1516904320499457662
+    second: Lecompte PSD_14
+  - first:
+      213: 6770884533133238822
+    second: Lecompte PSD_15
+  - first:
+      213: 5778069922648418640
+    second: Lecompte PSD_16
+  - first:
+      213: 2267052075030847233
+    second: Lecompte PSD_17
+  - first:
+      213: -6202802667143478562
+    second: Lecompte PSD_18
+  - first:
+      213: 2290248526487614368
+    second: Lecompte PSD_19
+  - first:
+      213: -831680029517311057
+    second: Lecompte PSD_20
+  - first:
+      213: -5067927160706800113
+    second: Lecompte PSD_21
+  - first:
+      213: 5669293123231549712
+    second: Lecompte PSD_22
+  - first:
+      213: 1935126885974020814
+    second: Lecompte PSD_23
+  - first:
+      213: 604351843002208052
+    second: Lecompte PSD_24
+  - first:
+      213: -6782901658002420883
+    second: Lecompte PSD_25
+  - first:
+      213: -9129145651368716973
+    second: Lecompte PSD_26
+  - first:
+      213: -305932213339805996
+    second: Lecompte PSD_27
+  - first:
+      213: -1369341632156703293
+    second: Lecompte PSD_28
+  - first:
+      213: -4125402995983135612
+    second: Lecompte PSD_29
+  - first:
+      213: -1725954628871909231
+    second: Lecompte PSD_30
+  - first:
+      213: -6033695270170761480
+    second: Lecompte PSD_31
+  - first:
+      213: -3984224677481800075
+    second: Lecompte PSD_32
+  - first:
+      213: 2652591190534088860
+    second: Lecompte PSD_33
+  - first:
+      213: 5580158695056334956
+    second: Lecompte PSD_34
+  - first:
+      213: -229345965512978325
+    second: Lecompte PSD_35
+  - first:
+      213: -9023058386267363348
+    second: Lecompte PSD_36
+  - first:
+      213: 3747696256594301485
+    second: Lecompte PSD_37
+  - first:
+      213: -1814428189927212536
+    second: Lecompte PSD_38
+  - first:
+      213: 1937315009400900152
+    second: Lecompte PSD_39
+  - first:
+      213: 4626881266936488542
+    second: Lecompte PSD_40
+  - first:
+      213: -2492117603515580028
+    second: Lecompte PSD_41
+  - first:
+      213: -8053265596758194491
+    second: Lecompte PSD_42
+  - first:
+      213: -6856691954395052215
+    second: Lecompte PSD_43
+  - first:
+      213: 1924256529224410634
+    second: Lecompte PSD_44
+  - first:
+      213: -1070774651885665157
+    second: Lecompte PSD_45
+  - first:
+      213: 1846193863092229674
+    second: Lecompte PSD_46
+  - first:
+      213: 8835193281839682962
+    second: Lecompte PSD_47
+  - first:
+      213: -4452028780275034166
+    second: Lecompte PSD_48
+  - first:
+      213: 4719744509837420100
+    second: Lecompte PSD_49
+  - first:
+      213: 1393740948289842907
+    second: Lecompte PSD_50
+  - first:
+      213: -5485984212508459245
+    second: Lecompte PSD_51
+  - first:
+      213: 4740606428407290200
+    second: Lecompte PSD_52
+  - first:
+      213: -4531921144118202932
+    second: Lecompte PSD_53
+  - first:
+      213: -6589991242521737049
+    second: Lecompte PSD_54
+  - first:
+      213: 505632401506841289
+    second: Lecompte PSD_55
+  - first:
+      213: -6346893865077930338
+    second: Lecompte PSD_56
+  - first:
+      213: -7080473953180045419
+    second: Lecompte PSD_57
+  - first:
+      213: -6123440565985721815
+    second: Lecompte PSD_58
+  - first:
+      213: 1768586840810625933
+    second: Lecompte PSD_59
+  - first:
+      213: -4161574023832171813
+    second: Lecompte PSD_60
+  - first:
+      213: -6005068722689211828
+    second: Lecompte PSD_61
+  - first:
+      213: -1168181184266137713
+    second: Lecompte PSD_62
+  - first:
+      213: -1867871977121538079
+    second: Lecompte PSD_63
+  - first:
+      213: 5556124085176218018
+    second: Lecompte PSD_64
+  - first:
+      213: -1722152828201833743
+    second: Lecompte PSD_65
+  - first:
+      213: 1262183783055538135
+    second: Lecompte PSD_66
+  - first:
+      213: -1326063037071789740
+    second: Lecompte PSD_67
+  - first:
+      213: 7823568453584669690
+    second: Lecompte PSD_68
+  - first:
+      213: 8765028766206800707
+    second: Lecompte PSD_69
+  - first:
+      213: 1225203522379529477
+    second: Lecompte PSD_70
+  - first:
+      213: -6884505383930514770
+    second: Lecompte PSD_71
+  - first:
+      213: -3760409227484429379
+    second: Lecompte PSD_72
+  - first:
+      213: 8044299537178877601
+    second: Lecompte PSD_73
+  - first:
+      213: 5216595549283730661
+    second: Lecompte PSD_74
+  - first:
+      213: -2139877345571150861
+    second: Lecompte PSD_75
+  - first:
+      213: -2255790066548522305
+    second: Lecompte PSD_76
+  - first:
+      213: -2608263144177211981
+    second: Lecompte PSD_77
+  - first:
+      213: -6317195073624283046
+    second: Lecompte PSD_78
+  - first:
+      213: 5819117525344765951
+    second: Lecompte PSD_79
+  - first:
+      213: -7258927473598553489
+    second: Lecompte PSD_80
+  - first:
+      213: -6233350835002445001
+    second: Lecompte PSD_81
+  - first:
+      213: 5722606235750037329
+    second: Lecompte PSD_82
+  - first:
+      213: 2562845356862698393
+    second: Lecompte PSD_83
+  - first:
+      213: -969590523448714066
+    second: Lecompte PSD_84
+  - first:
+      213: -7232246497702047204
+    second: Lecompte PSD_85
+  - first:
+      213: 8082923084857350689
+    second: Lecompte PSD_86
+  - first:
+      213: 2416717195575712293
+    second: Lecompte PSD_87
+  - first:
+      213: 543983990367643032
+    second: Lecompte PSD_88
+  - first:
+      213: -7489263649584454425
+    second: Lecompte PSD_89
+  - first:
+      213: -3520356773409375139
+    second: Lecompte PSD_90
+  - first:
+      213: 3194566221280794745
+    second: Lecompte PSD_91
+  - first:
+      213: -6702666512346818158
+    second: Lecompte PSD_92
+  - first:
+      213: -7688905058371789388
+    second: Lecompte PSD_93
+  - first:
+      213: -1416691082909774552
+    second: Lecompte PSD_94
+  - first:
+      213: 5479627454480726822
+    second: Lecompte PSD_95
+  - first:
+      213: 6609514082725336537
+    second: Lecompte PSD_96
+  - first:
+      213: -5839220660504661601
+    second: Lecompte PSD_97
+  - first:
+      213: -4329450657734509381
+    second: Lecompte PSD_98
+  - first:
+      213: -1043225937892144127
+    second: Lecompte PSD_99
+  - first:
+      213: -8131340327357512951
+    second: Lecompte PSD_100
+  - first:
+      213: 7189756267678538999
+    second: Lecompte PSD_101
+  - first:
+      213: 1899589835634102395
+    second: Lecompte PSD_102
+  - first:
+      213: -3902368016814652318
+    second: Lecompte PSD_103
+  - first:
+      213: 7927087994592516175
+    second: Lecompte PSD_104
+  - first:
+      213: -5871235660755223827
+    second: Lecompte PSD_105
+  - first:
+      213: 5985836526563927181
+    second: Lecompte PSD_106
+  - first:
+      213: -1748582188191762920
+    second: Lecompte PSD_107
+  - first:
+      213: -438275446382165081
+    second: Lecompte PSD_108
+  - first:
+      213: -6967333622961283878
+    second: Lecompte PSD_109
+  - first:
+      213: 2888500733319677104
+    second: Lecompte PSD_110
+  - first:
+      213: 592910871909531486
+    second: Lecompte PSD_111
+  - first:
+      213: -6940205604906401266
+    second: Lecompte PSD_112
+  - first:
+      213: -1235013578061766347
+    second: Lecompte PSD_113
+  - first:
+      213: -6615289629395409713
+    second: Lecompte PSD_114
+  - first:
+      213: 2832336078873474734
+    second: Lecompte PSD_115
+  - first:
+      213: -3127389758057976975
+    second: Lecompte PSD_116
+  - first:
+      213: 2339548739978242096
+    second: Lecompte PSD_117
+  - first:
+      213: -883417367794408764
+    second: Lecompte PSD_118
+  - first:
+      213: -935123617589358266
+    second: Lecompte PSD_119
+  - first:
+      213: 2663347396368625739
+    second: Lecompte PSD_120
+  - first:
+      213: -6678011087998099875
+    second: Lecompte PSD_121
+  - first:
+      213: -2207736472421037262
+    second: Lecompte PSD_122
+  - first:
+      213: -7545724598475386471
+    second: Lecompte PSD_123
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lecompte PSD_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d11f23b113a1880800000000000000
+      internalID: -8639538942268334699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3f38bf0adfb3a30800000000000000
+      internalID: 4196226345682072539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34494ed8df2cd0c30800000000000000
+      internalID: 4327329211235996739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0019d89847ca3fd0800000000000000
+      internalID: -2361355939986468854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd70368ef3cce300800000000000000
+      internalID: 282816374557933046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6d9b721a2b9c8a0800000000000000
+      internalID: -6284295399792847171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_6
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc2cf9c866a69990800000000000000
+      internalID: -7379527970404422403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_7
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515c1499ee683ec00800000000000000
+      internalID: 928734307500016917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_8
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3726edbea96ce820800000000000000
+      internalID: 2948848055252035390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_9
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f996dc7cd1aabd80800000000000000
+      internalID: -8234091000334214670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_10
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 910.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b89dd31845aa0a0800000000000000
+      internalID: -6869585367535088745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c490247f2a0ec00800000000000000
+      internalID: 927920706086849687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_12
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebadb356126ab630800000000000000
+      internalID: 3943572271750032363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c37f76f71a9ec8f0800000000000000
+      internalID: -518307479390555192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_14
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281ef52be8fd2fae0800000000000000
+      internalID: -1516904320499457662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_15
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622e794fb9307fd50800000000000000
+      internalID: 6770884533133238822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_16
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059e3da2bf3df2050800000000000000
+      internalID: 5778069922648418640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_17
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f9683d9df267f10800000000000000
+      internalID: 2267052075030847233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_18
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2411d86d73be9a0800000000000000
+      internalID: -6202802667143478562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_19
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3f7ac86e898cf10800000000000000
+      internalID: 2290248526487614368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_20
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 797.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa395d96b674574f0800000000000000
+      internalID: -831680029517311057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06648e291b1ba9b0800000000000000
+      internalID: -5067927160706800113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_22
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01908c1fe006dae40800000000000000
+      internalID: 5669293123231549712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_23
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec21ac966a3fada10800000000000000
+      internalID: 1935126885974020814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_24
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fcf799cc6136800800000000000000
+      internalID: 604351843002208052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_25
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b8b5021ea4ed1a0800000000000000
+      internalID: -6782901658002420883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_26
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3559d5bf562ce4180800000000000000
+      internalID: -9129145651368716973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_27
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6288ad54c11cbf0800000000000000
+      internalID: -305932213339805996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_28
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c565276a0f1ffce0800000000000000
+      internalID: -1369341632156703293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_29
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cc71d15df9fb6c0800000000000000
+      internalID: -4125402995983135612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_30
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19016a7d86d2c08e0800000000000000
+      internalID: -1725954628871909231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_31
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 684.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f66482ae12044ca0800000000000000
+      internalID: -6033695270170761480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1a51e3c035b8c0800000000000000
+      internalID: -3984224677481800075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_33
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c986d1e32a5efc420800000000000000
+      internalID: 2652591190534088860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_34
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60e329a4c4b07d40800000000000000
+      internalID: 5580158695056334956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_35
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b601eea3f0331dcf0800000000000000
+      internalID: -229345965512978325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_36
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7ace23438a7c280800000000000000
+      internalID: -9023058386267363348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_37
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d225d54a3ed720430800000000000000
+      internalID: 3747696256594301485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_38
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80afeecac2bd1d6e0800000000000000
+      internalID: -1814428189927212536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_39
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a8f599cb9b2ea10800000000000000
+      internalID: 1937315009400900152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_40
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52a8ad7ffbf53040800000000000000
+      internalID: 4626881266936488542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_41
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 571.2222
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481c4ff4e383a6dd0800000000000000
+      internalID: -2492117603515580028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c68a579b9d0d3090800000000000000
+      internalID: -8053265596758194491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_43
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947010ceef228d0a0800000000000000
+      internalID: -6856691954395052215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_44
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06a5214e1554ba10800000000000000
+      internalID: 1924256529224410634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_45
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74ccd79028d321f0800000000000000
+      internalID: -1070774651885665157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_46
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a265e14798ffe9910800000000000000
+      internalID: 1846193863092229674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_47
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295d8fd9a79ec9a70800000000000000
+      internalID: 8835193281839682962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_48
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 458.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac714e589673732c0800000000000000
+      internalID: -4452028780275034166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446a57b10a6ef7140800000000000000
+      internalID: 4719744509837420100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_50
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 345.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde6bb31200975310800000000000000
+      internalID: 1393740948289842907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_51
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 345.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f380abc6eddd3b0800000000000000
+      internalID: -5485984212508459245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_52
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 232.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85956290e640ac140800000000000000
+      internalID: 4740606428407290200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_53
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 232.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccda0c60bb16b11c0800000000000000
+      internalID: -4531921144118202932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_54
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 232.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a88e8451e5ab84a0800000000000000
+      internalID: -6589991242521737049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_55
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 232.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c23ebe7dfd540700800000000000000
+      internalID: 505632401506841289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecompte PSD_56
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 232.22223
+        width: 93.09091
+        height: 113.77778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e968ce038ad4be7a0800000000000000
+      internalID: -6346893865077930338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1d5145ed52d628649be7e703326801e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 1
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
