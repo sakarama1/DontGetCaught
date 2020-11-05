@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     GameManager gameManager;
+    SkinManager skinManager;
+    WeaponsManager weaponsManager;
+
+    public List<int> numbers;
 
     [Header("Canvas")]
     public GameObject startMenuUI;
@@ -41,9 +45,18 @@ public class UIManager : MonoBehaviour
 
     [Header("Shop UI")]
     public GameObject[] shopUnlocks;
+    public GameObject[] shopUnlocksPanels;
+
+    public Text shopCostText;
 
     [Header("Weapons UI")]
     public GameObject[] weaponsUnlocks;
+    public GameObject[] weaponsUnlocksPanels;
+
+    public GameObject unlockButton;
+    public GameObject selectButton;
+
+    public Text weaponsCostText;
 
     [Header("Next Level UI")]
     public Text nextMoneyCollectedText;
@@ -55,12 +68,14 @@ public class UIManager : MonoBehaviour
     public bool startCountDown;
 
     public Text moneyCollectedText;
-    public Text noThanksText;
+    public Image noThanksText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = gameObject.GetComponent<GameManager>();
+        skinManager = gameObject.GetComponent<SkinManager>();
+        weaponsManager = gameObject.GetComponent<WeaponsManager>();
     }
 
     // Update is called once per frame
@@ -91,13 +106,13 @@ public class UIManager : MonoBehaviour
     public void startGoToWeapons()
     {
         startMenuUI.SetActive(false);
-        shopUI.SetActive(true);
+        weaponsUI.SetActive(true);
     }
 
     public void startStartText()
     {
         startMenuUI.SetActive(false);
-        shopUI.SetActive(true);
+        inGameUI.SetActive(true);
     }
 
     //In Game Functions
@@ -139,7 +154,18 @@ public class UIManager : MonoBehaviour
 
     public void ShopUnlock()
     {
+        if(gameManager.totalMoney >= skinManager.cost)
+        {
+            shopUnlocksPanels[numbers[skinManager.numberofUnlocked - 1]].SetActive(false);
 
+            skinManager.unlocked[numbers[skinManager.numberofUnlocked - 1]] = true;
+
+            ++skinManager.numberofUnlocked;
+
+            skinManager.cost = skinManager.cost + skinManager.costMult * skinManager.numberofUnlocked;
+
+            shopCostText.text = skinManager.cost + "";
+        }
     }
 
     public void ShopGetMoney()
@@ -156,7 +182,31 @@ public class UIManager : MonoBehaviour
 
     public void WeaponsUnlock()
     {
+        if(gameManager.totalMoney >= weaponsManager.costs[weaponsManager.pickedNumber])
+        {
+            weaponsUnlocksPanels[weaponsManager.pickedNumber].SetActive(false);
 
+            weaponsManager.unlocked[weaponsManager.pickedNumber] = true;
+
+            if (!weaponsManager.unlocked[weaponsManager.pickedNumber])
+            {
+                ++weaponsManager.numberofUnlocked;
+            }
+        }  
+    }
+
+    public void WeaponsSelect()
+    {
+        weaponsUnlocks[weaponsManager.selectedNumber].GetComponent<Image>().color = weaponsManager.notSelectedColor;
+
+        weaponsManager.selectedNumber = weaponsManager.pickedNumber;
+
+        //save it in database
+        PlayerPrefs.SetInt("selectedNumberWeapons", weaponsManager.pickedNumber);
+
+        //change the color of the panel to give the user a feedback
+        weaponsUnlocks[weaponsManager.pickedNumber].GetComponent<Image>().color = weaponsManager.selectedColor;
+        return;
     }
 
     public void WeaponsGetMoney()
