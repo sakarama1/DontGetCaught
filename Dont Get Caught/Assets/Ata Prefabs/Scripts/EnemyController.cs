@@ -6,15 +6,22 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
 
-    public NavMeshAgent agent;
+    NavMeshAgent agent;
+    Animator animator;
+
     public GameObject[] patrolPoints;
-    
     public int pointCount;
     public bool alerted;
+    public List<GameObject> guardsInDistance;
 
     // Start is called before the first frame update
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+
+        guardsInDistance = new List<GameObject>();
+
         pointCount = 0;
         alerted = false;
         patrolPoints = GameObject.FindGameObjectsWithTag("PatrolPoints");
@@ -47,6 +54,40 @@ public class EnemyController : MonoBehaviour
     public void GoToAlertZone(Vector3 destination)
     {
         agent.SetDestination(destination);
+    }
+    
+    public void ShootPlayer(Transform playerTransform)
+    {
+        agent.isStopped = true;
+        animator.SetBool("ShouldMove", false);
+        transform.LookAt(playerTransform);
+        animator.SetBool("Fire", true);
+        
+    }
+
+
+
+    public void AlertObj(RaycastHit raycast)
+    {
+        alerted = true;
+        GoToAlertZone(raycast.transform.position);
+        for (int j = 0; j < guardsInDistance.Count; j++)
+        {
+            guardsInDistance[j].GetComponent<EnemyController>().alerted = true;
+            guardsInDistance[j].GetComponent<EnemyController>().GoToAlertZone(raycast.transform.position);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Guard"))
+            guardsInDistance.Add(other.gameObject);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Guard"))
+            guardsInDistance.Remove(other.gameObject);
     }
 
 }

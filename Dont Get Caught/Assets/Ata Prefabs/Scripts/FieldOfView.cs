@@ -7,18 +7,19 @@ public class FieldOfView : MonoBehaviour
     public LayerMask layermask;
     public float viewDistance;
     public float fov;
-    public List<GameObject> guardsInDistance;
+
     
     private Mesh mesh;
+    private EnemyController enemyController;
     
     // Start is called before the first frame update
     void Start()
     {
         mesh = new Mesh();
-        guardsInDistance = new List<GameObject>();
+
 
         GetComponent<MeshFilter>().mesh = mesh;
-
+        enemyController = transform.parent.GetComponent<EnemyController>();
 
     }
 
@@ -50,13 +51,12 @@ public class FieldOfView : MonoBehaviour
                 if (raycast.transform.gameObject.CompareTag("AlertObj"))
                 {
                     Debug.Log("Alerted");
-                    transform.parent.gameObject.GetComponent<EnemyController>().alerted = true;
-                    transform.parent.gameObject.GetComponent<EnemyController>().GoToAlertZone(raycast.transform.position);
-                    for (int j = 0; j < guardsInDistance.Count; j++)
-                    {
-                        guardsInDistance[j].GetComponent<EnemyController>().alerted = true;
-                        guardsInDistance[j].GetComponent<EnemyController>().GoToAlertZone(raycast.transform.position);
-                    }
+                    enemyController.AlertObj(raycast);
+
+                } 
+                else if (raycast.transform.gameObject.CompareTag("Player"))
+                {
+                    enemyController.ShootPlayer(raycast.transform);
                 }
             }
             else
@@ -90,15 +90,5 @@ public class FieldOfView : MonoBehaviour
         return new Vector3(Mathf.Cos(angleRad), 0f,Mathf.Sin(angleRad)); 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Guard"))
-            guardsInDistance.Add(other.gameObject);
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Guard"))
-            guardsInDistance.Remove(other.gameObject);
-    }
 }
