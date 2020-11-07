@@ -1,10 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player3Controller : MonoBehaviour
 {
     public Joystick joystick;
+    public GameObject child;
+    public GameObject manager;
+    GameManager gamemanager;
+
+    public GameObject HealthBar;
+    Slider slider;
+    public Gradient healthGradient;
+    public Image fill;
 
     private Rigidbody rb;
     private Vector3 moveDir;
@@ -21,6 +30,12 @@ public class Player3Controller : MonoBehaviour
         //speed = 5;
         rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
+
+        gamemanager = manager.GetComponent<GameManager>();
+
+        slider = HealthBar.GetComponent<Slider>();
+
+        InvokeRepeating("AdjustPlayerPos", 0f, 2f);
     }
 
     // Update is called once per frame
@@ -55,6 +70,12 @@ public class Player3Controller : MonoBehaviour
         SetMoveDir();
 
         anim.SetFloat("Running", moveDir.magnitude);
+
+        if(slider.value <= 0)
+        {
+            //player die animation
+            //game ends
+        }
     }
 
     //input.getaxislerle degistirilecek
@@ -79,9 +100,42 @@ public class Player3Controller : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Guard"))
         {
             anim.SetTrigger("Attack");
         }
+
+        if (other.CompareTag("Ammo"))
+        {
+            Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("Health"))
+        {
+            Destroy(other.gameObject);
+            slider.value += 30;
+            fill.color = healthGradient.Evaluate(slider.normalizedValue); //health bar changes color accordingly
+        }
+
+        if (other.CompareTag("Money"))
+        {
+            Destroy(other.gameObject);
+            gamemanager.collectedMoney += 5;
+            
+        }
+    }
+
+    //method for setting player's max health from other scripts
+    public void SetMaxHealth(int health)
+    {
+        slider.maxValue = health;
+        slider.value = health; //slider starts at maximum health
+
+        fill.color = healthGradient.Evaluate(1f); //slider gradient color is initially green
+    }
+
+    void AdjustPlayerPos()
+    {
+        child.transform.position = transform.position;
     }
 }
