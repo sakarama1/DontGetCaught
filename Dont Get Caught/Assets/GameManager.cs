@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        //Rumba Dance
+
         //arrange player
 
         //save total coins

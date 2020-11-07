@@ -22,5 +22,14 @@ public class OpenLaserDoor : MonoBehaviour
     public void openIt()
     {
         laserDoor.SetActive(false);
+        transform.GetChild(0).transform.localPosition = new Vector3(0, -0.07f, 0);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            openIt();
+        }
     }
 }

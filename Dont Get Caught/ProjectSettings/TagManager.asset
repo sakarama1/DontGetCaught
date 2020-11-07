@@ -9,6 +9,9 @@ TagManager:
   - Guard
   - Button
   - Money
+  - Ammo
+  - Health
+  - Pickup
   layers:
   - Default
   - TransparentFX
