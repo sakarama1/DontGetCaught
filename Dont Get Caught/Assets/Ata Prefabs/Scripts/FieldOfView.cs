@@ -7,10 +7,13 @@ public class FieldOfView : MonoBehaviour
     public LayerMask layermask;
     public float viewDistance;
     public float fov;
+    public bool detectedPlayer;
 
-    
+    Vector3 playerLastKnownLocation;
+
     private Mesh mesh;
     private EnemyController enemyController;
+    private IEnumerator coroutine;
     
     // Start is called before the first frame update
     void Start()
@@ -21,6 +24,8 @@ public class FieldOfView : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         enemyController = transform.parent.GetComponent<EnemyController>();
 
+        detectedPlayer = false;
+        playerLastKnownLocation = new Vector3(0,0,0);
     }
 
     // Update is called once per frame
@@ -30,7 +35,8 @@ public class FieldOfView : MonoBehaviour
         int rayCount = 30;
         float angle = 135f;
         float angleIncrease = fov / rayCount;
-    
+        int notPlayerCount = 0;
+        
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
         int[] triangles = new int[rayCount * 3];
@@ -39,7 +45,7 @@ public class FieldOfView : MonoBehaviour
 
         int vertexIndex = 1;
         int triangleIndex = 0;
-        for (int i = 0; i <= rayCount; i++)
+        for (int i = 0; i < rayCount; i++)
         {
             Vector3 vertex;
 
@@ -54,15 +60,23 @@ public class FieldOfView : MonoBehaviour
                     enemyController.AlertObj(raycast);
 
                 } 
-                else if (raycast.transform.gameObject.CompareTag("Player"))
+                
+                if (raycast.transform.gameObject.CompareTag("Player"))
                 {
+                    detectedPlayer = true;
                     enemyController.ShootPlayer(raycast.transform);
+                    playerLastKnownLocation = raycast.transform.position;
+                }
+                else
+                {
+                    notPlayerCount++;
                 }
             }
             else
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(AngleToVector(angle)) * 10, Color.yellow);
                 vertex = origin + AngleToVector(angle) * viewDistance;
+                notPlayerCount++;
             }
             vertices[vertexIndex] = vertex;
             
@@ -78,10 +92,16 @@ public class FieldOfView : MonoBehaviour
             vertexIndex++;
             angle -= angleIncrease;
         }
-
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
+
+        if(notPlayerCount == rayCount && detectedPlayer)
+        {
+            detectedPlayer = false;
+            coroutine = enemyController.GoThroughTheAlertZone(playerLastKnownLocation);
+            StartCoroutine(coroutine);
+        }
     }
 
     public static Vector3 AngleToVector(float angle)
