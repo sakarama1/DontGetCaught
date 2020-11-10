@@ -15,11 +15,14 @@ public class EnemyController : MonoBehaviour
     public List<GameObject> guardsInDistance;
     public GameObject bullet;
     public GameObject bulletInstantiationPoint;
+    public float guardHealth;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        guardHealth = 100f;
+        
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
@@ -128,6 +131,10 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Guard"))
             guardsInDistance.Add(other.gameObject);
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            guardHealth -= 40f;
+        }
 
     }
 

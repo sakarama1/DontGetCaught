@@ -12,6 +12,7 @@ TagManager:
   - Ammo
   - Health
   - Pickup
+  - Bullet
   layers:
   - Default
   - TransparentFX
