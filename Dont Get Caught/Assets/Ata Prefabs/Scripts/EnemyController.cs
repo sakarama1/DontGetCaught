@@ -13,8 +13,9 @@ public class EnemyController : MonoBehaviour
     public int pointCount;
     public bool alerted;
     public List<GameObject> guardsInDistance;
+    public GameObject bullet;
+    public GameObject bulletInstantiationPoint;
 
-    private IEnumerator coroutine;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class EnemyController : MonoBehaviour
 
         guardsInDistance = new List<GameObject>();
 
-        pointCount = 0;
+        pointCount = Random.Range(0, patrolPoints.Length - 1);
         alerted = false;
         patrolPoints = GameObject.FindGameObjectsWithTag("PatrolPoints");
     }
@@ -108,6 +109,13 @@ public class EnemyController : MonoBehaviour
         }
 
         return returnArr;
+    }
+
+    public void FireBullet()
+    {
+        GameObject clone = Instantiate(bullet, bulletInstantiationPoint.transform.position, Quaternion.identity, transform);
+        Destroy(clone, 2f);
+
     }
 
 
