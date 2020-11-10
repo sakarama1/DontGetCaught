@@ -8,7 +8,13 @@ public class Player3Controller : MonoBehaviour
     public Joystick joystick;
     public GameObject child;
     public GameObject manager;
+    public GameObject hand;
+    public GameObject weapons;
+
     GameManager gamemanager;
+    SkinManager skinManager;
+    WeaponsManager weaponsManager;
+    UIManager uIManager;
 
     public GameObject HealthBar;
     Slider slider;
@@ -17,23 +23,41 @@ public class Player3Controller : MonoBehaviour
 
     private Rigidbody rb;
     private Vector3 moveDir;
-    Animator anim;
+    public Animator animator;
 
     float mHorizontal = 0f;
     float mVertical = 0f;
 
     public float speed;
 
+    public bool isDead;
+    public bool finished;
+
     // Start is called before the first frame update
     void Start()
     {
+        gamemanager = manager.GetComponent<GameManager>();
+        skinManager = manager.GetComponent<SkinManager>();
+        weaponsManager = manager.GetComponent<WeaponsManager>();
+        uIManager = manager.GetComponent<UIManager>();
+
+        child = transform.GetChild(skinManager.selectedNumber).gameObject;
+        child.SetActive(true);
+
+        //hand = child.GetComponent<FindHand>().Hand;
+
+        //weapons.transform.SetParent(hand.transform);
+        //weapons.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+        //weapons.transform.GetChild(weaponsManager.selectedNumber).gameObject.SetActive(true);
+
         //speed = 5;
         rb = GetComponent<Rigidbody>();
-        anim = GetComponentInChildren<Animator>();
-
-        gamemanager = manager.GetComponent<GameManager>();
+        animator = child.GetComponent<Animator>();
 
         slider = HealthBar.GetComponent<Slider>();
+
+        uIManager.collectedMoneyText.text = "+ " + gamemanager.collectedMoney;
+        uIManager.PtotalMoneyText.text = "+ " + gamemanager.collectedMoney;
 
         InvokeRepeating("AdjustPlayerPos", 0f, 2f);
     }
@@ -69,12 +93,11 @@ public class Player3Controller : MonoBehaviour
 
         SetMoveDir();
 
-        anim.SetFloat("Running", moveDir.magnitude);
+        animator.SetFloat("Running", moveDir.magnitude);
 
         if(slider.value <= 0)
         {
-            //player die animation
-            //game ends
+            die();
         }
     }
 
@@ -102,12 +125,7 @@ public class Player3Controller : MonoBehaviour
     {
         if (other.CompareTag("Guard"))
         {
-            anim.SetTrigger("Attack");
-        }
-
-        if (other.CompareTag("Ammo"))
-        {
-            Destroy(other.gameObject);
+            animator.SetTrigger("Attack");
         }
 
         if (other.CompareTag("Health"))
@@ -121,7 +139,34 @@ public class Player3Controller : MonoBehaviour
         {
             Destroy(other.gameObject);
             gamemanager.collectedMoney += 5;
-            
+
+            uIManager.collectedMoneyText.text = "+ " + gamemanager.collectedMoney;
+            uIManager.PtotalMoneyText.text = "+ " + gamemanager.collectedMoney;
+        }
+
+        if (other.CompareTag("Damage"))
+        {
+            //make more general
+            getDamaged(10);
+        }
+
+        if (other.CompareTag("Finish"))
+        {
+            finished = true;
+            animator.SetTrigger("Finish"); //rumba dance
+
+            //ui stuff
+            gamemanager.EndGame();
+            uIManager.inGameUI.SetActive(false);
+            uIManager.nextLevelUI.SetActive(true);
+
+            //stop the time
+            Time.timeScale = 0;
+        }
+
+        if (other.CompareTag("Vault"))
+        {
+            gamemanager.finish.SetActive(true);
         }
     }
 
@@ -137,5 +182,30 @@ public class Player3Controller : MonoBehaviour
     void AdjustPlayerPos()
     {
         child.transform.position = transform.position;
+    }
+
+    public void getDamaged(int damage)
+    {
+        slider.value -= damage;
+    }
+
+    public void die()
+    {
+        isDead = true;
+        animator.SetTrigger("Die");
+        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+    }
+
+    public void setZero()
+    {
+        if (isDead)
+        {
+            rb.velocity = Vector3.zero;
+        }
+
+        if (finished)
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 }
