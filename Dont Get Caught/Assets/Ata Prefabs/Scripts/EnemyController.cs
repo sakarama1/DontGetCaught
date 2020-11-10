@@ -56,9 +56,13 @@ public class EnemyController : MonoBehaviour
 
     public IEnumerator GoThroughTheAlertZone(Vector3 destination)
     {
-        Debug.Log("Comingggg");
         agent.isStopped = false;
         animator.SetBool("Fire", false);
+        foreach(GameObject guard in guardsInDistance)
+        {
+            IEnumerator coroutine = guard.GetComponent<EnemyController>().GoThroughTheAlertZone(destination);
+            StartCoroutine(coroutine);
+        }
         agent.SetDestination(destination);
         yield return new WaitUntil(() => agent.remainingDistance == 0);
         List<Transform> patrolPointsInDistance = FindPatrolPointsInRadius(30); 
@@ -113,7 +117,8 @@ public class EnemyController : MonoBehaviour
 
     public void FireBullet()
     {
-        GameObject clone = Instantiate(bullet, bulletInstantiationPoint.transform.position, Quaternion.identity, transform);
+        GameObject clone = Instantiate(bullet, bulletInstantiationPoint.transform.position, Quaternion.identity);
+        clone.GetComponent<Bullet>().direction = transform.forward;
         Destroy(clone, 2f);
 
     }

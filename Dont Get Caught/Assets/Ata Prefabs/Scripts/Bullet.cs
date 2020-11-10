@@ -5,13 +5,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     float speed;
-    Vector3 direction;
+    public Vector3 direction;
     
     // Start is called before the first frame update
     void Start()
     {
         speed = 100f;
-        direction = transform.root.forward;
 
     }
 
@@ -19,10 +18,12 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.Translate(direction * Time.deltaTime * speed);
+
     }
 
     private void OnParticleCollision(GameObject other)
     {
+        Debug.Log("Hit!");
         Destroy(gameObject);
     }
 }
