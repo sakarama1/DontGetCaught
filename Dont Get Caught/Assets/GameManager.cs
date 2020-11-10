@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] levels;
 
+    public GameObject finish;
+    public GameObject vault;
+
+    public GameObject Level;
+
     UIManager uiManager;
 
     private void Awake()
@@ -62,19 +67,33 @@ public class GameManager : MonoBehaviour
 
         //Set level UI
         uiManager.levelText.text = "Level " + currentLevel;
+        uiManager.IGlevelText.text = "Level " + currentLevel;
+        uiManager.PlevelText.text = "Level " + currentLevel;
+
+        uiManager.totalMoneyText.text = totalMoney + "";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (player.GetComponent<Player3Controller>().isDead)
+        {
+            player.GetComponent<Player3Controller>().enabled = false;
+
+            uiManager.gameOverUI.SetActive(true);
+            uiManager.inGameUI.SetActive(false);
+
+            //play sound
+            //gameObject.GetComponent<AudioSource>().clip = deathClip;
+            //gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 
     public void EndGame()
     {
-        //Rumba Dance
-
         //arrange player
+        player.GetComponent<Player3Controller>().enabled = false;
+        player.GetComponent<Player3Controller>().setZero();
 
         //save total coins
         totalMoney += collectedMoney;
@@ -96,22 +115,21 @@ public class GameManager : MonoBehaviour
             //Advertisements.Instance.ShowInterstitial();
         }
 
-        //destroy all of the enemies
-        //foreach (GameObject enemy in enemies)
-        //{
-        //    Destroy(enemy);
-        //}
+        Destroy(Level);
     }
 
     public void Revive()
     {
-        //arrange player
+        player.GetComponent<Player3Controller>().enabled = true;
+        player.GetComponent<Player3Controller>().isDead = false;
+        player.GetComponent<Player3Controller>().animator.SetTrigger("Revive");
 
         //change UI
         uiManager.gameOverUI.SetActive(false);
         uiManager.inGameUI.SetActive(true);
 
         ////reactivate enemies
+        ///
         //foreach (GameObject enemy in enemies)
         //{
         //    enemy.GetComponent<EnemyController>().setStart();
@@ -127,21 +145,13 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         //arrange player
+        player.GetComponent<Player3Controller>().enabled = true;
+        player.GetComponent<Player3Controller>().finished = false;
 
         //manage UI
         uiManager.startMenuUI.SetActive(false);
         uiManager.inGameUI.SetActive(true);
 
-        //find all enemies and initialize them
-        //enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        //foreach (GameObject enemy in enemies)
-        //{
-        //    enemyController = enemy.GetComponent<EnemyController>();
-
-        //    if (enemyController != null)
-        //    {
-        //        enemyController.setStart();
-        //    }
-        //}
+        Instantiate(levels[currentLevel]);
     }
 }
