@@ -26,7 +26,6 @@ public class DoorController : MonoBehaviour
     }
     public void OnAnimationExit()
     {
-        Debug.Log("Called");
         animator.SetBool("OpenDoor", false);
     }
 

@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
     public bool alerted;
     public List<GameObject> guardsInDistance;
 
+    private IEnumerator coroutine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,14 +53,29 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    public void GoToAlertZone(Vector3 destination)
+    public IEnumerator GoThroughTheAlertZone(Vector3 destination)
     {
+        Debug.Log("Comingggg");
+        agent.isStopped = false;
+        animator.SetBool("Fire", false);
         agent.SetDestination(destination);
+        yield return new WaitUntil(() => agent.remainingDistance == 0);
+        List<Transform> patrolPointsInDistance = FindPatrolPointsInRadius(30); 
+        
+        foreach(Transform point in patrolPointsInDistance)
+        {
+            agent.SetDestination(point.position);
+            yield return new WaitUntil(() => agent.remainingDistance == 0);
+        }
+
+        alerted = false;
+
     }
     
     public void ShootPlayer(Transform playerTransform)
     {
         agent.isStopped = true;
+        alerted = true;
         animator.SetBool("ShouldMove", false);
         transform.LookAt(playerTransform);
         animator.SetBool("Fire", true);
@@ -70,18 +87,35 @@ public class EnemyController : MonoBehaviour
     public void AlertObj(RaycastHit raycast)
     {
         alerted = true;
-        GoToAlertZone(raycast.transform.position);
+        GoThroughTheAlertZone(raycast.transform.position);
         for (int j = 0; j < guardsInDistance.Count; j++)
         {
             guardsInDistance[j].GetComponent<EnemyController>().alerted = true;
-            guardsInDistance[j].GetComponent<EnemyController>().GoToAlertZone(raycast.transform.position);
+            guardsInDistance[j].GetComponent<EnemyController>().GoThroughTheAlertZone(raycast.transform.position);
         }
     }
+
+    public List<Transform> FindPatrolPointsInRadius(float radius)
+    {
+        List<Transform> returnArr = new List<Transform>();
+        foreach(GameObject patrolPoint in patrolPoints)
+        {
+            float distanceMagn = (transform.position - patrolPoint.transform.position).sqrMagnitude;
+            if(distanceMagn < radius*radius)
+            {
+                returnArr.Add(patrolPoint.transform);
+            }
+        }
+
+        return returnArr;
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Guard"))
             guardsInDistance.Add(other.gameObject);
+
     }
 
     private void OnTriggerExit(Collider other)
