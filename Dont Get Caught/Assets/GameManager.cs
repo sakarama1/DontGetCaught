@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject finish;
     public GameObject vault;
 
-    public GameObject Level;
+    public GameObject level;
 
     UIManager uiManager;
 
@@ -71,6 +71,8 @@ public class GameManager : MonoBehaviour
         uiManager.PlevelText.text = "Level " + currentLevel;
 
         uiManager.totalMoneyText.text = totalMoney + "";
+
+        level = Instantiate(levels[currentLevel]);
     }
 
     // Update is called once per frame
@@ -95,6 +97,9 @@ public class GameManager : MonoBehaviour
         player.GetComponent<Player3Controller>().enabled = false;
         player.GetComponent<Player3Controller>().setZero();
 
+        uiManager.inGameUI.SetActive(false);
+        uiManager.nextLevelUI.SetActive(true);
+
         //save total coins
         totalMoney += collectedMoney;
         PlayerPrefs.SetInt("totalMoney", totalMoney);
@@ -115,7 +120,7 @@ public class GameManager : MonoBehaviour
             //Advertisements.Instance.ShowInterstitial();
         }
 
-        Destroy(Level);
+        Destroy(level);
     }
 
     public void Revive()
@@ -152,6 +157,7 @@ public class GameManager : MonoBehaviour
         uiManager.startMenuUI.SetActive(false);
         uiManager.inGameUI.SetActive(true);
 
-        Instantiate(levels[currentLevel]);
+        player.GetComponent<Player3Controller>().Canvas.SetActive(true);
+        player.transform.rotation = Quaternion.identity;
     }
 }

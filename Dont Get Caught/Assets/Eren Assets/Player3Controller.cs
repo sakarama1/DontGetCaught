@@ -16,6 +16,8 @@ public class Player3Controller : MonoBehaviour
     WeaponsManager weaponsManager;
     UIManager uIManager;
 
+    public int health;
+    public GameObject Canvas;
     public GameObject HealthBar;
     Slider slider;
     public Gradient healthGradient;
@@ -55,6 +57,8 @@ public class Player3Controller : MonoBehaviour
         animator = child.GetComponent<Animator>();
 
         slider = HealthBar.GetComponent<Slider>();
+
+        SetMaxHealth(health);
 
         uIManager.collectedMoneyText.text = "+ " + gamemanager.collectedMoney;
         uIManager.PtotalMoneyText.text = "+ " + gamemanager.collectedMoney;
@@ -153,12 +157,10 @@ public class Player3Controller : MonoBehaviour
         if (other.CompareTag("Finish"))
         {
             finished = true;
-            animator.SetTrigger("Finish"); //rumba dance
+            //animator.SetTrigger("Finish"); //rumba dance
 
             //ui stuff
             gamemanager.EndGame();
-            uIManager.inGameUI.SetActive(false);
-            uIManager.nextLevelUI.SetActive(true);
 
             //stop the time
             Time.timeScale = 0;

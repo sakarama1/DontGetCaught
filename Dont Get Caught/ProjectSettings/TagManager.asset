@@ -13,6 +13,8 @@ TagManager:
   - Health
   - Pickup
   - Bullet
+  - Damage
+  - Vault
   layers:
   - Default
   - TransparentFX
