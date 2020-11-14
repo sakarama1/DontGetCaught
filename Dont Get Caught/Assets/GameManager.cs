@@ -78,9 +78,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.GetComponent<Player3Controller>().isDead)
+        if (player.GetComponent<PlayerController>().isDead)
         {
-            player.GetComponent<Player3Controller>().enabled = false;
+            player.GetComponent<PlayerController>().enabled = false;
 
             uiManager.gameOverUI.SetActive(true);
             uiManager.inGameUI.SetActive(false);
@@ -94,8 +94,8 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         //arrange player
-        player.GetComponent<Player3Controller>().enabled = false;
-        player.GetComponent<Player3Controller>().setZero();
+        player.GetComponent<PlayerController>().enabled = false;
+        player.GetComponent<PlayerController>().setZero();
 
         uiManager.inGameUI.SetActive(false);
         uiManager.nextLevelUI.SetActive(true);
@@ -125,9 +125,9 @@ public class GameManager : MonoBehaviour
 
     public void Revive()
     {
-        player.GetComponent<Player3Controller>().enabled = true;
-        player.GetComponent<Player3Controller>().isDead = false;
-        player.GetComponent<Player3Controller>().animator.SetTrigger("Revive");
+        player.GetComponent<PlayerController>().enabled = true;
+        player.GetComponent<PlayerController>().isDead = false;
+        player.GetComponent<PlayerController>().animator.SetTrigger("Revive");
 
         //change UI
         uiManager.gameOverUI.SetActive(false);
@@ -150,14 +150,14 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         //arrange player
-        player.GetComponent<Player3Controller>().enabled = true;
-        player.GetComponent<Player3Controller>().finished = false;
+        player.GetComponent<PlayerController>().enabled = true;
+        player.GetComponent<PlayerController>().finished = false;
 
         //manage UI
         uiManager.startMenuUI.SetActive(false);
         uiManager.inGameUI.SetActive(true);
 
-        player.GetComponent<Player3Controller>().Canvas.SetActive(true);
+        player.GetComponent<PlayerController>().Canvas.SetActive(true);
         player.transform.rotation = Quaternion.identity;
     }
 }

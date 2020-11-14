@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 offset;
-    [Range(0, 10)]
-    public float zoom;
+    public Transform trackedObject;
+    private Vector3 offset;
 
-    private float height = 1.7f;
-
-    private void LateUpdate()
+    // Start is called before the first frame update
+    void Start()
     {
-        transform.position = target.position - offset * zoom;
-        transform.LookAt(target.position + Vector3.up * height);
+        offset = transform.position - trackedObject.transform.position;
+    }
+
+    // Update is called once per frame
+    void LateUpdate()
+    {
+        transform.position = trackedObject.transform.position + offset;
     }
 }
