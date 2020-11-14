@@ -248,7 +248,6 @@ GameObject:
   - component: {fileID: 6835713043572392723}
   - component: {fileID: 6835713043571544355}
   - component: {fileID: 6835713043570172223}
-  - component: {fileID: 6790095923401640339}
   - component: {fileID: -663099728306717870}
   m_Layer: 0
   m_Name: Pistol
@@ -322,20 +321,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &6790095923401640339
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6835713043572654629}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43926119963064422, guid: 333bd96ab68cc2940862abdf1a7929ce, type: 2}
 --- !u!114 &-663099728306717870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,9 +330,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6835713043572654629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e33337b1dc45d459a9d741688a0330, type: 3}
+  m_Script: {fileID: 11500000, guid: bf194781ddcff154584d6c3d4098251d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 7637040970104902696, guid: 7dabfb55556a24e4fa80cfe61d1c548b, type: 3}
+  shootingPoint: {fileID: 6831772459746521968}
 --- !u!1 &8409604233097936605
 GameObject:
   m_ObjectHideFlags: 0

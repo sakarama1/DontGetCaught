@@ -34,6 +34,9 @@ public class Player3Controller : MonoBehaviour
 
     public bool isDead;
     public bool finished;
+    public bool hasPistol;
+
+    public GameObject pistol;
 
     // Start is called before the first frame update
     void Start()
@@ -129,7 +132,15 @@ public class Player3Controller : MonoBehaviour
     {
         if (other.CompareTag("Guard"))
         {
-            animator.SetTrigger("Attack");
+            if (hasPistol)
+            {
+                animator.SetBool("RangedAttack", true);
+            }
+
+            else
+            {
+                animator.SetBool("MeleeAttack", true);
+            } 
         }
 
         if (other.CompareTag("Health"))
@@ -148,7 +159,7 @@ public class Player3Controller : MonoBehaviour
             uIManager.PtotalMoneyText.text = "+ " + gamemanager.collectedMoney;
         }
 
-        if (other.CompareTag("Damage"))
+        if (other.CompareTag("Bullet"))
         {
             //make more general
             getDamaged(10);
@@ -169,6 +180,11 @@ public class Player3Controller : MonoBehaviour
         if (other.CompareTag("Vault"))
         {
             gamemanager.finish.SetActive(true);
+        }
+
+        if (other.CompareTag("Pistol"))
+        {
+            pickupGun();
         }
     }
 
@@ -209,5 +225,15 @@ public class Player3Controller : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
+    }
+
+    public void pickupGun()
+    {
+        hasPistol = true;
+        pistol.SetActive(true);
+
+        BoxCollider col = gameObject.GetComponent<BoxCollider>();
+        col.size = new Vector3(2, 1, 3);
+        col.center = new Vector3(0, 1, 1.5f);
     }
 }
