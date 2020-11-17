@@ -99,7 +99,7 @@ public class FieldOfView : MonoBehaviour
         if(notPlayerCount == rayCount && detectedPlayer)
         {
             detectedPlayer = false;
-            coroutine = enemyController.GoThroughTheAlertZone(playerLastKnownLocation);
+            coroutine = enemyController.GoThroughTheAlertZone(playerLastKnownLocation, true);
             StartCoroutine(coroutine);
         }
     }

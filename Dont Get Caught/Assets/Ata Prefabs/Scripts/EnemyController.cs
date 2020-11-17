@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
        
-        if (agent.remainingDistance == 0 || (agent.path.status == NavMeshPathStatus.PathPartial))
+        if (agent.remainingDistance < agent.stoppingDistance || (agent.path.status == NavMeshPathStatus.PathPartial))
         {
             int oldPointCount = pointCount;
             pointCount = Random.Range(0, patrolPoints.Length);
@@ -57,25 +57,24 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    public IEnumerator GoThroughTheAlertZone(Vector3 destination)
+    public IEnumerator GoThroughTheAlertZone(Vector3 destination, bool hasSeenPlayer)
     {
         agent.isStopped = false;
         animator.SetBool("Fire", false);
-        foreach(GameObject guard in guardsInDistance)
-        {
-            IEnumerator coroutine = guard.GetComponent<EnemyController>().GoThroughTheAlertZone(destination);
-            StartCoroutine(coroutine);
-        }
+        if(hasSeenPlayer)
+            foreach (GameObject guard in guardsInDistance)
+            {
+                IEnumerator coroutine = guard.GetComponent<EnemyController>().GoThroughTheAlertZone(destination, false);
+                StartCoroutine(coroutine);
+            }
         agent.SetDestination(destination);
-        yield return new WaitUntil(() => agent.remainingDistance == 0);
-        List<Transform> patrolPointsInDistance = FindPatrolPointsInRadius(30); 
-        
-        foreach(Transform point in patrolPointsInDistance)
+        yield return new WaitUntil(() => agent.remainingDistance < agent.stoppingDistance);
+        List<Transform> patrolPointsInDistance = FindPatrolPointsInRadius(30);
+        foreach (Transform point in patrolPointsInDistance)
         {
             agent.SetDestination(point.position);
             yield return new WaitUntil(() => agent.remainingDistance == 0);
         }
-
         alerted = false;
 
     }
@@ -95,11 +94,10 @@ public class EnemyController : MonoBehaviour
     public void AlertObj(RaycastHit raycast)
     {
         alerted = true;
-        GoThroughTheAlertZone(raycast.transform.position);
+        GoThroughTheAlertZone(raycast.transform.position, true);
         for (int j = 0; j < guardsInDistance.Count; j++)
         {
-            guardsInDistance[j].GetComponent<EnemyController>().alerted = true;
-            guardsInDistance[j].GetComponent<EnemyController>().GoThroughTheAlertZone(raycast.transform.position);
+            guardsInDistance[j].GetComponent<EnemyController>().GoThroughTheAlertZone(raycast.transform.position, false);
         }
     }
 
@@ -129,8 +127,8 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Guard"))
-            guardsInDistance.Add(other.gameObject);
+        //if (other.gameObject.CompareTag("Guard"))
+            //guardsInDistance.Add(other.gameObject);
         if (other.gameObject.CompareTag("Bullet"))
         {
             guardHealth -= 40f;
@@ -140,8 +138,8 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Guard"))
-            guardsInDistance.Remove(other.gameObject);
+        //if (other.gameObject.CompareTag("Guard"))
+            //guardsInDistance.Remove(other.gameObject);
     }
 
 }
