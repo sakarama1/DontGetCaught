@@ -37,14 +37,14 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
        
-        if (agent.remainingDistance == 0)
+        if (agent.remainingDistance == 0 || (agent.path.status == NavMeshPathStatus.PathPartial))
         {
             int oldPointCount = pointCount;
-            pointCount = Random.Range(0, patrolPoints.Length - 1);
+            pointCount = Random.Range(0, patrolPoints.Length);
             
             while(pointCount == oldPointCount)
             {
-                pointCount = Random.Range(0, patrolPoints.Length - 1);
+                pointCount = Random.Range(0, patrolPoints.Length);
             }
         }
 
