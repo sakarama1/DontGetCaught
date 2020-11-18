@@ -73,7 +73,7 @@ public class EnemyController : MonoBehaviour
         foreach (Transform point in patrolPointsInDistance)
         {
             agent.SetDestination(point.position);
-            yield return new WaitUntil(() => agent.remainingDistance == 0);
+            yield return new WaitUntil(() => agent.remainingDistance < agent.stoppingDistance);
         }
         alerted = false;
 
