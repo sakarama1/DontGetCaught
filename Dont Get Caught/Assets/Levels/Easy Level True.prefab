@@ -2883,6 +2883,9 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  guardCallMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1348699236857049003
 GameObject:
   m_ObjectHideFlags: 0

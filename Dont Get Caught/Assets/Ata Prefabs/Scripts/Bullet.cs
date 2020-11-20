@@ -23,7 +23,10 @@ public class Bullet : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Hit!");
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<PlayerController>().health -= Random.Range(7, 15);
+        }
         Destroy(gameObject);
     }
 }

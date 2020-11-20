@@ -102,6 +102,8 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Running", moveDir.magnitude);
 
+        slider.value = health;
+
         if(slider.value <= 0)
         {
             die();

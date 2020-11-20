@@ -9,9 +9,11 @@ public class CameraDetection : MonoBehaviour
     public float angleIntervall;
     public float viewDistance;
     public LayerMask layerMask;
+    public LayerMask guardCallMask;
 
     int intervallCount;
     int angleCount;
+    IEnumerator coroutine;
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +37,14 @@ public class CameraDetection : MonoBehaviour
                     Debug.DrawRay(transform.position, (transform.forward + angleVec) * 5, Color.white);
                     if (ray.transform.gameObject.CompareTag("Player"))
                     {
-                        
+                        int radius = 20;
+                        Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius, guardCallMask, QueryTriggerInteraction.Ignore);
+                        foreach (var hitCollider in hitColliders)
+                        {
+                            Debug.Log("Start");
+                            coroutine = hitCollider.gameObject.GetComponent<EnemyController>().GoThroughTheAlertZone(ray.point, false);
+                            StartCoroutine(coroutine);
+                        }
                     }
                     
 
