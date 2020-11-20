@@ -184,10 +184,10 @@ public class PlayerController : MonoBehaviour
             gamemanager.finish.SetActive(true);
         }
 
-        if (other.CompareTag("Pistol"))
-        {
-            pickupGun();
-        }
+        //if (other.CompareTag("Pistol"))
+        //{
+        //    pickupGun();
+        //}
     }
 
     //method for setting player's max health from other scripts

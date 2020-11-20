@@ -48,7 +48,7 @@ MonoBehaviour:
   layermask:
     serializedVersion: 2
     m_Bits: 55
-  viewDistance: 30
+  viewDistance: 5
   fov: 60
   detectedPlayer: 0
 --- !u!33 &2037759175337832088
@@ -9980,7 +9980,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43936364991991704, guid: 5978e1e21e344c04487869f4b3e6571f, type: 2}

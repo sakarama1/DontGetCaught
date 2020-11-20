@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6532959265071716471}
-  - component: {fileID: 6532959265071716470}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -32,25 +31,6 @@ Transform:
   m_Father: {fileID: 6532959265743789668}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6532959265071716470
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6532959265071716464}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 242d0c84f77361d4abc018c8b39c5d92, type: 3}
-  m_Controller: {fileID: 9100000, guid: 972a6bb97057f2644a0b8ce0a4b89e68, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6532959265743789669
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +87,7 @@ GameObject:
   - component: {fileID: 8502023898771579301}
   - component: {fileID: 8502023898770772105}
   - component: {fileID: 8502023898769709735}
+  - component: {fileID: 3968637856288119644}
   m_Layer: 0
   m_Name: SM_Prop_Money_Note_03
   m_TagString: Untagged
@@ -175,3 +156,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &3968637856288119644
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502023898771881239}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 242d0c84f77361d4abc018c8b39c5d92, type: 3}
+  m_Controller: {fileID: 9100000, guid: 972a6bb97057f2644a0b8ce0a4b89e68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
